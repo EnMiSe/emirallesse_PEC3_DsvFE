@@ -9,7 +9,7 @@ S'assigna un objecte a dog conforme a l'interface Dog.
 La segona assignació a dog seria un error de compilació en TypeScript, ja que true no és un string.
 La funció baby està tipada per acceptar i retornar objectes del tipus Dog.
 
-Principals avantatges de l'ús de TypeScript sobre JavaScript són els següents:
+Els principals avantatges de l'ús de TypeScript sobre JavaScript són els següents:
 TypeScript afegeix un sistema de tipat estàtic. Això vol dir que les variables, paràmetres i valors de retorn tenen tipus definits, el que ajuda a detectar errors durant la fase de desenvolupament, abans de l'execució del codi.
 Amb TypeScript, els objectes i els paràmetres de funcions poden ser tipats, cosa que redueix la probabilitat d'errors en temps d'execució, ja que es poden detectar assignacions incorrectes i usos incorrectes de les variables i funcions.
 També es permet definir interfaces i classes, així com característiques de la programació orientada a objectes com l'herència, que no són tan directes o explícites en JavaScript pur.

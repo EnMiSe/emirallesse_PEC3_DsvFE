@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "target": "es2015", 
-    "module": "commonjs", 
-    "outDir": "./dist",   
-    "rootDir": "./src", 
-    "strict": true,
-    "incremental": true,
-    "tsBuildInfoFile": "./buildcache",
+    "target": "es2015", // S'especifica la versió d'ECMAScript a la qual TypeScript serà compilat. En aquest cas, a ECMAScript 2015 (també conegut com ES6).
+    "module": "commonjs", // Es defineix el sistema de mòduls a utilitzar. "commonjs" és el format utilitzat per Node.js, i és adequat per a aplicacions que s'executen en aquest entorn.
+    "outDir": "./dist", // S'especifica el directori on els fitxers compilats de JavaScript seran generats i guardats.
+    "rootDir": "./src", // Es defineix la carpeta arrel que conté els fitxers TypeScript a compilar.
+    "strict": true, // S'habilita totes les opcions estrictes de tipat, que imposa una comprovació de tipus més rigorosa per millorar la seguretat del tipat.
+    "incremental": true, // Es permet al compilador guardar informació sobre l'estat de la compilació anterior per només recompilar els fitxers canviats, accelerant així els temps de compilació següents.
+    "tsBuildInfoFile": "./.buildcache", // S'especifica on guardar la informació de compilació incremental per a usar-la en compilacions futures.
   }
 }
+
