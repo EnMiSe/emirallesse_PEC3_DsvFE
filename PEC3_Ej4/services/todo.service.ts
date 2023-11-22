@@ -10,9 +10,9 @@ class TodoService {
   private onTodoListChanged: (todos: Todo[]) => void;
 
   constructor() {
-    this.todos = (JSON.parse(localStorage.getItem('todos')) || []).map(
+    this.todos = JSON.parse(localStorage.getItem('todos') || "[]").map(
       (todoData: { text: string; complete: boolean; id?: string }) => new Todo(todoData)
-    );
+    );    
   }
 
   bindTodoListChanged(callback: (todos: Todo[]) => void): void {
@@ -29,6 +29,10 @@ class TodoService {
     this.todos.push(newTodo);
 
     this._commit(this.todos);
+  }
+
+  getTodos(): Todo[] {
+    return this.todos;
   }
 
   editTodo(id: string, updatedText: string): void {

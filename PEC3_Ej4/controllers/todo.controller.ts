@@ -30,16 +30,16 @@ class TodoController {
   handleAddTodo = (todoText: string): void => {
     this.service.addTodo(todoText);
   };
-
-  handleEditTodo = (id: number, todoText: string): void => {
+  
+  handleEditTodo = (id: string, todoText: string): void => {
     this.service.editTodo(id, todoText);
   };
 
-  handleDeleteTodo = (id: number): void => {
+  handleDeleteTodo = (id: string): void => {
     this.service.deleteTodo(id);
   };
 
-  handleToggleTodo = (id: number): void => {
+  handleToggleTodo = (id: string): void => {
     this.service.toggleTodo(id);
   };
 }
